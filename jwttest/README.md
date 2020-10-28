@@ -33,7 +33,4 @@ openssl pkcs8 -topk8 -inform PEM -in RSA_2048_pri.pem -outform PEM -nocrypt > RS
 openssl ecparam -name prime256v1 -genkey -out ECDSA_p256_pri.pem
 openssl ec -in ECDSA_p256_pri.pem -pubout -out ECDSA_p256_pub.txt
 openssl pkcs8 -topk8 -inform PEM -in ECDSA_p256_pri.pem -outform PEM -nocrypt >ECDSA_p256_pri.txt
-
-
-
 ```
